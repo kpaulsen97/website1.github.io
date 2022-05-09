@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<title>Mypost | Social data website</title>
+<title>Mortality, emissions, global warming: energy type point of view | Social data website</title>
 <meta charset="utf-8">
 <meta name="generator" content="Hugo 0.98.0" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,10 +17,231 @@
 
 <article>
   <header>
-    <h1>Mypost</h1>
+    <h1>Mortality, emissions, global warming: energy type point of view</h1>
     <time datetime="2022-05-07T09:08:10&#43;02:00">May 07, 2022</time>
   </header>
-  <p>This is content!!</p>
+  <h1 id="introduction">Introduction</h1>
+<p>Energy: it&rsquo;s the base of everything. If we didn&rsquo;t have available energy our cars wouldn&rsquo;t work, our industries neither, we wouldn&rsquo;t have water in our houses, warmth in the winter and the list goes on. <!-- raw HTML omitted --></p>
+<p>But everything has a cost, especially if it is this great: the planet is suffering. And doesn&rsquo;t matter if we can order sushi from our smartphones whenever we want if we don&rsquo;t have a planet to eat sushi on.</p>
+<p>A very common solution we hear all the time: reduce energy consumption. We change kind of electronics to more sustainable ones, we remember to turn off the lights when we go out of a room, we kindly asks big corporations to reduce emissions in their factories etc <!-- raw HTML omitted --></p>
+<p>But let&rsquo;s be honest here: is it working? Are humans really capable of such big changes in their lifestyles for such an abstract motive?
+By current statistics we are severly far away from the plans to reduce world emissions, even if this issue has been talked for decades.</p>
+<p>So what if we just changed the type of energy used? What if we didn&rsquo;t have to change our lifestyle, as this appears to have not been working, but we just had to invest in a different kind of energy? Would that suffice?</p>
+<p>So we will structure our analysis in the following way: first we will analyze the link between global warming and emissions, then emissions and energy type, and finally we will determine how an ideal proportions of energy type will affect mortality.</p>
+<h1 id="exploratory-data-analysis-temperatures">Exploratory data analysis: Temperatures</h1>
+<p><img src="/website1.github.io/d1.png" alt="demo">
+<img src="/website1.github.io/d2.png" alt="demo"></p>
+<p>We can see in the above images how the change of temperature is a very real phenomena: in the first two plot we can see how there has been an significant average difference of temperature from a pre-industrial baseline year by year.</p>
+<p>In the plots that follows we can see how in every continent the increase appears to be linear: every year there appears to be an costant increment, with Asia displaying the highest increase, and Oceania the lowest. So we have to admit that year by year we are inesorably increasing the earth temperature, with all it&rsquo;s negative consequences.</p>
+<h1 id="exploratory-data-analysis-emissions">Exploratory Data Analysis: Emissions</h1>
+<p><img src="/website1.github.io/d4.png" alt="demo">
+With the above pictures we have a hint of a pattern that starts to emerge: from the plots before we can tell how the temperatures have been rising, and from these two above we can see how both the energy expenditure per capita and the emissions have been increasing.</p>
+<p>So there seem to be three key playiers: the energy expenditure, the temperatures and the emissions.</p>
+<p><img src="/website1.github.io/d5.png" alt="demo"></p>
+<p>Above there is a plot of the emissions by country in year 2019: we can see how there is a profound difference between countries, with USA and China leading by far in terms of emissions. So let&rsquo;s have a closer look in the differnece between emission reduction in recent years.</p>
+<p><img src="/website1.github.io/d6.png" alt="demo">
+Emissions are reducing in first world countries, especially in scandinavian countries as Denmark and Sweden, but are increasing dramatically in third world and developing countries, such as India, China and the African continent.</p>
+<p>Can the change of energy type have been responsible for this? Let&rsquo;s see it in the following interactive plot.</p>
+<h1 id="exploratory-data-analysis-energy-type">Exploratory Data Analysis: Energy type</h1>
+<p>Below you will find two interactive plots. Just by selecting or deselecting in the legend the type of energy, you will have visualizations accordingly: for example, just by ticking Oil, you will have visualizations regarding the oil energy percentage of a certain country.</p>
+<p>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="6425605a-77a0-4fec-bc89-d16ea806793b" data-root-id="4925"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="5526">
+          {"4eca4ad2-18ec-459c-a4a0-a15c3e63a022":{"defs":[],"roots":{"references":[{"attributes":{"below":[{"id":"4936"}],"center":[{"id":"4939"},{"id":"4943"},{"id":"4974"}],"left":[{"id":"4940"}],"renderers":[{"id":"4962"},{"id":"4980"},{"id":"4997"},{"id":"5014"},{"id":"5031"},{"id":"5048"},{"id":"5065"},{"id":"5082"}],"title":{"id":"4926"},"toolbar":{"id":"4951"},"width":950,"x_range":{"id":"4928"},"x_scale":{"id":"4932"},"y_range":{"id":"4930"},"y_scale":{"id":"4934"}},"id":"4925","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"value":"#e84d60"},"line_color":{"value":"#1f77b4"},"top":{"field":"Solar"},"x":{"field":"Year"}},"id":"4994","type":"VBar"},{"attributes":{},"id":"4969","type":"BasicTickFormatter"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"4994"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"4996"},"nonselection_glyph":{"id":"4995"},"view":{"id":"4998"}},"id":"4997","type":"GlyphRenderer"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"5045"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5047"},"nonselection_glyph":{"id":"5046"},"view":{"id":"5049"}},"id":"5048","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#c9d9d3"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Oil"},"x":{"field":"Year"}},"id":"4960","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#e84d60"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Solar"},"x":{"field":"Year"}},"id":"4995","type":"VBar"},{"attributes":{"source":{"id":"4461"}},"id":"4998","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#4d60e8"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Wind"},"x":{"field":"Year"}},"id":"5046","type":"VBar"},{"attributes":{"source":{"id":"4461"}},"id":"5049","type":"CDSView"},{"attributes":{"label":{"value":"Solar"},"renderers":[{"id":"4997"}]},"id":"5009","type":"LegendItem"},{"attributes":{"axis_label":"Year","coordinates":null,"formatter":{"id":"4969"},"group":null,"major_label_policy":{"id":"4970"},"ticker":{"id":"4937"}},"id":"4936","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Coal"},"x":{"field":"Year"}},"id":"4979","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#e84d60"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Solar"},"x":{"field":"Year"}},"id":"4996","type":"VBar"},{"attributes":{"axis":{"id":"4936"},"coordinates":null,"group":null,"ticker":null},"id":"4939","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#4d60e8"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Wind"},"x":{"field":"Year"}},"id":"5047","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"4959"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"4961"},"nonselection_glyph":{"id":"4960"},"view":{"id":"4963"}},"id":"4962","type":"GlyphRenderer"},{"attributes":{"fill_color":{"value":"#4d60e8"},"line_color":{"value":"#1f77b4"},"top":{"field":"Wind"},"x":{"field":"Year"}},"id":"5045","type":"VBar"},{"attributes":{"fill_color":{"value":"#e8884d"},"line_color":{"value":"#1f77b4"},"top":{"field":"Gas"},"x":{"field":"Year"}},"id":"5062","type":"VBar"},{"attributes":{"source":{"id":"4461"}},"id":"4963","type":"CDSView"},{"attributes":{"label":{"value":"Wind"},"renderers":[{"id":"5048"}]},"id":"5060","type":"LegendItem"},{"attributes":{},"id":"4510","type":"Selection"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"4977"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"4979"},"nonselection_glyph":{"id":"4978"},"view":{"id":"4981"}},"id":"4980","type":"GlyphRenderer"},{"attributes":{},"id":"4945","type":"WheelZoomTool"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#c9d9d3"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Oil"},"x":{"field":"Year"}},"id":"4961","type":"VBar"},{"attributes":{},"id":"4947","type":"SaveTool"},{"attributes":{},"id":"4934","type":"LinearScale"},{"attributes":{"label":{"value":"Oil"},"renderers":[{"id":"4962"}]},"id":"4975","type":"LegendItem"},{"attributes":{"fill_color":{"value":"green"},"line_color":{"value":"#1f77b4"},"top":{"field":"Others"},"x":{"field":"Year"}},"id":"5079","type":"VBar"},{"attributes":{"click_policy":"mute","coordinates":null,"group":null,"items":[{"id":"4975"},{"id":"4992"},{"id":"5009"},{"id":"5026"},{"id":"5043"},{"id":"5060"},{"id":"5077"},{"id":"5094"}],"location":"top_center","orientation":"horizontal"},"id":"4974","type":"Legend"},{"attributes":{"fill_color":{"value":"#718dbf"},"line_color":{"value":"#1f77b4"},"top":{"field":"Coal"},"x":{"field":"Year"}},"id":"4977","type":"VBar"},{"attributes":{"label":{"value":"Coal"},"renderers":[{"id":"4980"}]},"id":"4992","type":"LegendItem"},{"attributes":{"data":{"Coal":{"__ndarray__":"fT81XrpJS0BGtvP91LhLQLpJDAIrp0tA9ihcj8LlS0BU46WbxHBLQNNNYhBYOUtAw/UoXI9SS0CJQWDl0DJMQOf7qfHSzUtA6SYxCKysS0Bt5/up8eJLQKRwPQrXI0xAnu+nxktXTEDByqFFtqNMQAAAAAAAEExAUI2XbhKzS0D8qfHSTWJLQDMzMzMzI0tA/Knx0k1ySkBQjZduEoNJQEJg5dAiy0lAVg4tsp3fSUASg8DKodVJQHWTGARWDkpAZmZmZmbWSUD+1HjpJrFKQHWTGARWXkpAz/dT46WLSkCLbOf7qSFLQOOlm8QgUEtA3SQGgZXzSkAxCKwcWrRKQG8Sg8DKgUtANV66SQxSTEB1kxgEVh5NQKabxCCwwkxADi2yne8HTEBCYOXQIttLQLByaJHt3EtAEoPAyqFVS0A=","dtype":"float64","order":"little","shape":[40]},"Gas":{"__ndarray__":"arx0kxgE7j/ZzvdT46X3P90kBoGVQ/8/rkfhehSuAUD2KFyPwvUCQPYoXI/C9QVARIts5/upDEDVeOkmMQgPQDMzMzMzsxBAyXa+nxovEkD4U+Olm0QUQIGVQ4tsZxVAqMZLN4nBFkCPwvUoXI8WQA4tsp3vJxdAWmQ730+NGECNl24Sg8AZQKAaL90khhpAwcqhRbZzG0AxCKwcWmQbQMdLN4lBYBtA5/up8dJNG0Coxks3iUEbQJqZmZmZGRxAqMZLN4lBHEDy0k1iENgdQJMYBFYOrR1AoBov3SSGHUBiEFg5tMgcQJMYBFYObSBA30+Nl27SIkCTGARWDi0iQFYOLbKd7x9AxSCwcmgRG0DFILByaBEZQCGwcmiR7RdAbef7qfFSGEAZBFYOLbIYQB+F61G4HhlACKwcWmQ7GUA=","dtype":"float64","order":"little","shape":[40]},"Hydro":{"__ndarray__":"I9v5fmp8KUASg8DKoYUoQDm0yHa+3yRABFYOLbIdI0CNl24SgwAkQEjhehSuRyJAbef7qfFSIUCHFtnO91MeQC/dJAaBFR9A3SQGgZWDIECsHFpkOx8gQIXrUbgeBSFArkfhehSuHkC4HoXrUTgeQIXrUbgeRSBApHA9CtejHEDwp8ZLNwkZQOkmMQisHBhAZDvfT40XG0CLbOf7qfEZQC/dJAaBFRdA8tJNYhBYFUCYbhKDwEoTQClcj8L1qBJAmpmZmZkZGUBiEFg5tMgWQEw3iUFg5RhALbKd76fGGED8qfHSTeIVQESLbOf7qRJAtMh2vp8aEkAUrkfhepQUQJqZmZmZGRFAKVyPwvWoEkBiEFg5tEgSQMdLN4lB4BBAIbByaJHtDkCe76fGSzcPQGq8dJMYBA5Ai2zn+6nxEEA=","dtype":"float64","order":"little","shape":[40]},"Nuclear":{"__ndarray__":"arx0kxgE4j/8qfHSTWLgP3e+nxov3dw/L90kBoGV4z9/arx0kxjoP3E9CtejcOk/EFg5tMh26j+R7Xw/NV7qP65H4XoUrus/+FPjpZvE4D+iRbbz/dToP1YOLbKd7+M/O99PjZdu5j9I4XoUrkflP6rx0k1iEOA/YOXQItv55j8nMQisHFroP65H4XoUrus/Rrbz/dR47T+q8dJNYhDwP7bz/dR46fI//Knx0k1i9j+YbhKDwMr1P/Cnxks3ifM/MzMzMzMz9T/6fmq8dJPwPzMzMzMzM+8/okW28/3U7D9eukkMAivnPwRWDi2ynec/jZduEoPA7j++nxov3ST0Py/dJAaBlfM/okW28/3U8j+oxks3iUHyP5zEILByaPM/qMZLN4lB8j8zMzMzMzPxP2IQWDm0yPA/tvP91Hjp8j8=","dtype":"float64","order":"little","shape":[40]},"Oil":{"__ndarray__":"rkfhehQuP0B1kxgEVk4+QGDl0CLb2T9AMzMzMzPTP0AfhetRuP4/QFYOLbKdb0BAMQisHFokQEDFILByaFE/QNv5fmq8lD9Abef7qfFSP0Cq8dJNYlA+QIPAyqFFNj1AI9v5fmo8PUBt5/up8dI8QDEIrBxaZD1AXI/C9Sh8PkAAAAAAAKA/QIcW2c73A0BABFYOLbItQEA1XrpJDDJBQDvfT42XLkFAAAAAAAAwQUAX2c73U4NBQMuhRbbzTUFAyXa+nxqPQED6fmq8dNM/QI/C9Shczz9A2/l+arx0P0Db+X5qvDQ/QGZmZmZmhj5ARIts5/vJPUBt5/up8XI9QJhuEoPAqj1AF9nO91PDPEBOYhBYObQ7QHe+nxov/TxAPzVeuklsPkAtsp3vp0Y+QBsv3SQG4T1Aj8L1KFwPPkA=","dtype":"float64","order":"little","shape":[40]},"Others renewables":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB7FK5H4Xp0P7pJDAIrh4Y/ObTIdr6fij/ZzvdT46WbPyuHFtnO96M/iUFg5dAiqz9Ei2zn+6mxPxsv3SQGgbU/4XoUrkfhuj+gGi/dJAbBP1TjpZvEIMA/L90kBoGVwz+HFtnO91PDPwaBlUOLbMc/5dAi2/l+yj9oke18PzXOPy2yne+nxtM/Vg4tsp3v1z99PzVeukncPycxCKwcWuA/CtejcD0K4z+cxCCwcmjlP1pkO99Pjec/nMQgsHJo6T/ByqFFtvPpP76fGi/dJOo/gZVDi2zn5z9g5dAi2/nmP7pJDAIrh+Y/c2iR7Xw/5T8=","dtype":"float64","order":"little","shape":[40]},"Solar":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8qfHSTWJQP/yp8dJNYlA/AAAAAAAAAAAAAAAAAAAAAPyp8dJNYlA//Knx0k1iUD/8qfHSTWJQP/yp8dJNYlA//Knx0k1iUD/8qfHSTWJQPwAAAAAAAAAA+n5qvHSTaD/6fmq8dJNoP/p+arx0k2g/exSuR+F6dD/8qfHSTWKgPyuHFtnO97M/YOXQItv5vj/P91PjpZvEPzm0yHa+n8o/EoPAyqFF1j8CK4cW2c7jPwisHFpkO+8/x0s3iUFg8z8=","dtype":"float64","order":"little","shape":[40]},"Wind":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8qfHSTWJwPzm0yHa+n4o/exSuR+F6hD97FK5H4XqEP9v5fmq8dJM/qvHSTWIQqD97FK5H4Xq0P8P1KFyPwrU/EoPAyqFFtj/Jdr6fGi+9PxBYObTIdr4/g8DKoUW2wz83iUFg5dDCP2ZmZmZmZsY/d76fGi/d1D9mZmZmZmbWP1CNl24Sg+A/4XoUrkfh4j9CYOXQItvlPwwCK4cW2eY/7FG4HoXr6T/ByqFFtvPtP2iR7Xw/NfA/YOXQItv58D+amZmZmZnxP/p+arx0k/A/IbByaJHt9D/+1HjpJjH4P+xRuB6F6/k/UI2XbhKD+j8=","dtype":"float64","order":"little","shape":[40]},"Year":[1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],"index":[1574,1575,1576,1577,1578,1579,1580,1581,1582,1583,1584,1585,1586,1587,1588,1589,1590,1591,1592,1593,1594,1595,1596,1597,1598,1599,1600,1601,1602,1603,1604,1605,1606,1607,1608,1609,1610,1611,1612,1613]},"selected":{"id":"4510"},"selection_policy":{"id":"4509"}},"id":"4461","type":"ColumnDataSource"},{"attributes":{"axis_label":"Total","coordinates":null,"formatter":{"id":"4966"},"group":null,"major_label_policy":{"id":"4967"},"ticker":{"id":"4941"}},"id":"4940","type":"LinearAxis"},{"attributes":{"label":{"value":"Hydro"},"renderers":[{"id":"5031"}]},"id":"5043","type":"LegendItem"},{"attributes":{},"id":"4966","type":"BasicTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"green"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Others"},"x":{"field":"Year"}},"id":"5080","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"5028"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5030"},"nonselection_glyph":{"id":"5029"},"view":{"id":"5032"}},"id":"5031","type":"GlyphRenderer"},{"attributes":{"source":{"id":"4461"}},"id":"4981","type":"CDSView"},{"attributes":{"fill_color":{"value":"#c9d9d3"},"line_color":{"value":"#1f77b4"},"top":{"field":"Oil"},"x":{"field":"Year"}},"id":"4959","type":"VBar"},{"attributes":{},"id":"4930","type":"DataRange1d"},{"attributes":{"axis":{"id":"4940"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"4943","type":"Grid"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#4de8d5"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Hydro"},"x":{"field":"Year"}},"id":"5029","type":"VBar"},{"attributes":{"source":{"id":"4461"}},"id":"5032","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Coal"},"x":{"field":"Year"}},"id":"4978","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"5079"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5081"},"nonselection_glyph":{"id":"5080"},"view":{"id":"5083"}},"id":"5082","type":"GlyphRenderer"},{"attributes":{},"id":"4941","type":"BasicTicker"},{"attributes":{},"id":"4509","type":"UnionRenderers"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#4de8d5"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Hydro"},"x":{"field":"Year"}},"id":"5030","type":"VBar"},{"attributes":{"coordinates":null,"group":null,"text":"Percentages of the types of energy in India (1980-2019)"},"id":"4926","type":"Title"},{"attributes":{"tools":[{"id":"4944"},{"id":"4945"},{"id":"4946"},{"id":"4947"},{"id":"4948"},{"id":"4949"}]},"id":"4951","type":"Toolbar"},{"attributes":{"source":{"id":"4461"}},"id":"5083","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#e8884d"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Gas"},"x":{"field":"Year"}},"id":"5063","type":"VBar"},{"attributes":{"overlay":{"id":"4950"}},"id":"4946","type":"BoxZoomTool"},{"attributes":{"label":{"value":"Others"},"renderers":[{"id":"5082"}]},"id":"5094","type":"LegendItem"},{"attributes":{"fill_color":{"value":"#b3de69"},"line_color":{"value":"#1f77b4"},"top":{"field":"Nuclear"},"x":{"field":"Year"}},"id":"5011","type":"VBar"},{"attributes":{},"id":"4948","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"green"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Others"},"x":{"field":"Year"}},"id":"5081","type":"VBar"},{"attributes":{},"id":"4967","type":"AllLabels"},{"attributes":{},"id":"4928","type":"DataRange1d"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"5011"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5013"},"nonselection_glyph":{"id":"5012"},"view":{"id":"5015"}},"id":"5014","type":"GlyphRenderer"},{"attributes":{"bottom_units":"screen","coordinates":null,"fill_alpha":0.5,"fill_color":"lightgrey","group":null,"left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"4950","type":"BoxAnnotation"},{"attributes":{"coordinates":null,"data_source":{"id":"4461"},"glyph":{"id":"5062"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5064"},"nonselection_glyph":{"id":"5063"},"view":{"id":"5066"}},"id":"5065","type":"GlyphRenderer"},{"attributes":{},"id":"4937","type":"BasicTicker"},{"attributes":{},"id":"4932","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#b3de69"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Nuclear"},"x":{"field":"Year"}},"id":"5012","type":"VBar"},{"attributes":{"source":{"id":"4461"}},"id":"5015","type":"CDSView"},{"attributes":{"source":{"id":"4461"}},"id":"5066","type":"CDSView"},{"attributes":{},"id":"4944","type":"PanTool"},{"attributes":{"label":{"value":"Nuclear"},"renderers":[{"id":"5014"}]},"id":"5026","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#b3de69"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Nuclear"},"x":{"field":"Year"}},"id":"5013","type":"VBar"},{"attributes":{},"id":"4949","type":"HelpTool"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#e8884d"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Gas"},"x":{"field":"Year"}},"id":"5064","type":"VBar"},{"attributes":{"fill_color":{"value":"#4de8d5"},"line_color":{"value":"#1f77b4"},"top":{"field":"Hydro"},"x":{"field":"Year"}},"id":"5028","type":"VBar"},{"attributes":{"label":{"value":"Gas"},"renderers":[{"id":"5065"}]},"id":"5077","type":"LegendItem"},{"attributes":{},"id":"4970","type":"AllLabels"}],"root_ids":["4925"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('5526').textContent;
+                  const render_items = [{"docid":"4eca4ad2-18ec-459c-a4a0-a15c3e63a022","root_ids":["4925"],"roots":{"4925":"6425605a-77a0-4fec-bc89-d16ea806793b"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+India, which had the biggest increase in emissions in the last 30 years, appears to be using a high percentage of oil, coal and gas, the energy types with the highest emissions. Negligeble amount of sustainable energy types, with an actual decrease of hydro energy during the years.</p>
+<p>So one of the countries with the highest emissions appears to be using a very low percentage of &ldquo;green&rdquo; energy types. What about the country with the lowest emissions per population size, Sweden?</p>
+<p>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.2.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="838a582c-5888-43a4-a39d-6dafd699a380" data-root-id="5543"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="6154">
+          {"8fa4e874-20bb-495e-8309-82216aca2ee1":{"defs":[],"roots":{"references":[{"attributes":{"below":[{"id":"5554"}],"center":[{"id":"5557"},{"id":"5561"},{"id":"5592"}],"left":[{"id":"5558"}],"renderers":[{"id":"5580"},{"id":"5598"},{"id":"5615"},{"id":"5632"},{"id":"5649"},{"id":"5666"},{"id":"5683"},{"id":"5700"}],"title":{"id":"5544"},"toolbar":{"id":"5569"},"width":950,"x_range":{"id":"5546"},"x_scale":{"id":"5550"},"y_range":{"id":"5548"},"y_scale":{"id":"5552"}},"id":"5543","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"5562","type":"PanTool"},{"attributes":{"label":{"value":"Solar"},"renderers":[{"id":"5615"}]},"id":"5627","type":"LegendItem"},{"attributes":{"tools":[{"id":"5562"},{"id":"5563"},{"id":"5564"},{"id":"5565"},{"id":"5566"},{"id":"5567"}]},"id":"5569","type":"Toolbar"},{"attributes":{},"id":"5540","type":"UnionRenderers"},{"attributes":{"source":{"id":"5537"}},"id":"5581","type":"CDSView"},{"attributes":{"source":{"id":"5537"}},"id":"5667","type":"CDSView"},{"attributes":{},"id":"5567","type":"HelpTool"},{"attributes":{},"id":"5563","type":"WheelZoomTool"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5663"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5665"},"nonselection_glyph":{"id":"5664"},"view":{"id":"5667"}},"id":"5666","type":"GlyphRenderer"},{"attributes":{"coordinates":null,"group":null,"text":"Percentages of the types of energy in Sweden (1980-2019)"},"id":"5544","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#4d60e8"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Wind"},"x":{"field":"Year"}},"id":"5664","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5612"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5614"},"nonselection_glyph":{"id":"5613"},"view":{"id":"5616"}},"id":"5615","type":"GlyphRenderer"},{"attributes":{"axis":{"id":"5558"},"coordinates":null,"dimension":1,"group":null,"ticker":null},"id":"5561","type":"Grid"},{"attributes":{"fill_color":{"value":"#e8884d"},"line_color":{"value":"#1f77b4"},"top":{"field":"Gas"},"x":{"field":"Year"}},"id":"5680","type":"VBar"},{"attributes":{"overlay":{"id":"5568"}},"id":"5564","type":"BoxZoomTool"},{"attributes":{"click_policy":"mute","coordinates":null,"group":null,"items":[{"id":"5593"},{"id":"5610"},{"id":"5627"},{"id":"5644"},{"id":"5661"},{"id":"5678"},{"id":"5695"},{"id":"5712"}],"orientation":"horizontal"},"id":"5592","type":"Legend"},{"attributes":{},"id":"5565","type":"SaveTool"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#4d60e8"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Wind"},"x":{"field":"Year"}},"id":"5665","type":"VBar"},{"attributes":{},"id":"5566","type":"ResetTool"},{"attributes":{"label":{"value":"Oil"},"renderers":[{"id":"5580"}]},"id":"5593","type":"LegendItem"},{"attributes":{"label":{"value":"Wind"},"renderers":[{"id":"5666"}]},"id":"5678","type":"LegendItem"},{"attributes":{"fill_color":{"value":"#4d60e8"},"line_color":{"value":"#1f77b4"},"top":{"field":"Wind"},"x":{"field":"Year"}},"id":"5663","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#e84d60"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Solar"},"x":{"field":"Year"}},"id":"5613","type":"VBar"},{"attributes":{"bottom_units":"screen","coordinates":null,"fill_alpha":0.5,"fill_color":"lightgrey","group":null,"left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","syncable":false,"top_units":"screen"},"id":"5568","type":"BoxAnnotation"},{"attributes":{"fill_color":{"value":"#718dbf"},"line_color":{"value":"#1f77b4"},"top":{"field":"Coal"},"x":{"field":"Year"}},"id":"5595","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#e84d60"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Solar"},"x":{"field":"Year"}},"id":"5614","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5595"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5597"},"nonselection_glyph":{"id":"5596"},"view":{"id":"5599"}},"id":"5598","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Coal"},"x":{"field":"Year"}},"id":"5596","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"green"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Others"},"x":{"field":"Year"}},"id":"5698","type":"VBar"},{"attributes":{},"id":"5584","type":"BasicTickFormatter"},{"attributes":{},"id":"5552","type":"LinearScale"},{"attributes":{"source":{"id":"5537"}},"id":"5599","type":"CDSView"},{"attributes":{},"id":"5588","type":"AllLabels"},{"attributes":{"label":{"value":"Coal"},"renderers":[{"id":"5598"}]},"id":"5610","type":"LegendItem"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5646"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5648"},"nonselection_glyph":{"id":"5647"},"view":{"id":"5650"}},"id":"5649","type":"GlyphRenderer"},{"attributes":{"data":{"Coal":{"__ndarray__":"fT81XrpJCUDByqFFtvMFQK5H4XoUrglAI9v5fmo8EECgGi/dJIYSQKrx0k1iEBRASgwCK4eWFECHFtnO99MUQCGwcmiR7RRA/tR46SYxFEBYObTIdr4UQPLSTWIQWBVAw/UoXI/CE0Dy0k1iEFgUQPp+arx0kxRA/Knx0k1iFEDZzvdT4yUXQMl2vp8aLxNA16NwPQrXEUCq8dJNYpARQFg5tMh2PhNABoGVQ4tsE0BzaJHtfD8WQIPAyqFFthZAw/UoXI/CFUAxCKwcWmQTQBKDwMqhxRZAppvEILDyFEBSuB6F61EVQLbz/dR4aRBAXI/C9ShcFUACK4cW2U4TQN0kBoGVQw9AAAAAAAAAEUCF61G4HgUQQHWTGARWDg9AK4cW2c73DkBWDi2yne8NQARWDi2ynQ5ACKwcWmQ7DkA=","dtype":"float64","order":"little","shape":[40]},"Gas":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIlBYOXQIrs/9P3UeOkm0T+wcmiR7XzXP7bz/dR46d4/9P3UeOkm5T/2KFyPwvXsP+f7qfHSTfA/fT81XrpJ8j+TGARWDi30PyuHFtnO9/M/AiuHFtnO8z/D9Shcj8L1PwwCK4cW2fQ/SgwCK4cW8z8ZBFYOLbLzPwwCK4cW2fQ/gZVDi2zn9T8tsp3vp8b3P+Olm8QgsPg/TDeJQWDl9j/dJAaBlUP1P65H4XoUrvc/VOOlm8Qg+D99PzVeukn2P3Noke18PwBAbxKDwMqhBEDl0CLb+X4AQPT91HjpJvs/mG4Sg8DK+z8hsHJoke32P05iEFg5tPg/d76fGi/d+j91kxgEVg75PwrXo3A9Cvs/9ihcj8L1+j8=","dtype":"float64","order":"little","shape":[40]},"Hydro":{"__ndarray__":"3SQGgZUDOkC6SQwCK6c6QPp+arx00zlAbef7qfESPkCkcD0K12M+QO58PzVeOj1ATDeJQWAlOEAGgZVDiyw9QJhuEoPACj1ApHA9CteDPkDjpZvEIFA+QB+F61G43jtA7nw/NV5KQEApXI/C9YhAQGQ730+NFzpAKVyPwvXIPUBOYhBYOTQ3QLbz/dR4CT5A1XjpJjEIPkDRItv5fqo9QNNNYhBYmUFAw/UoXI9iQEBMN4lBYCU9QMHKoUW2UzhARrbz/dR4OUBcj8L1KJw9QGIQWDm0iDpAi2zn+6nxO0CDwMqhRXY9QDeJQWDlUD5A6SYxCKzcPEDb+X5qvFQ9QIlBYOXQMkBARIts5/upOkDNzMzMzKw7QL6fGi/dhD9AZDvfT403OkAUrkfhenQ6QAAAAAAAoDlAw/UoXI8iOkA=","dtype":"float64","order":"little","shape":[40]},"Nuclear":{"__ndarray__":"KVyPwvVoJ0A730+Nl84wQB1aZDvfTzJADi2yne9nM0DRItv5fso2QCPb+X5qHDhA8tJNYhC4O0CWQ4ts51s7QGDl0CLb2TxALbKd76fmO0Coxks3iYE8QLbz/dR46UBAnu+nxkvXO0Bt5/up8TI7QGZmZmZmJkBA16NwPQqXPkBI4XoUrqdAQNEi2/l+aj5AN4lBYOWQPUDwp8ZLN0k+QHnpJjEIrDlA3SQGgZXjPUDRItv5fuo9QKjGSzeJoT5AwcqhRbZTQEBcj8L1KJw9QKJFtvP91DxAYhBYObRIPEAOLbKd70c7QK5H4XoULjhAK4cW2c4XOUAzMzMzM3M6QA4tsp3vRzpAVOOlm8TgPECcxCCwcig8QKJFtvP9lDdAzczMzMysOkBU46WbxMA6QMl2vp8aTzxALbKd76emOkA=","dtype":"float64","order":"little","shape":[40]},"Oil":{"__ndarray__":"LbKd76dmTUDFILByaLFKQIGVQ4tsF0pAUI2XbhLjRkDn+6nx0q1EQBKDwMqhZURAgZVDi2z3REBcj8L1KIxCQEw3iUFgxUFAf2q8dJN4QUAX2c73UyNBQI2XbhKDID9AsHJoke1MQECJQWDl0DJAQNNNYhBYGUFA7FG4HoUbQEC28/3UeKlBQN0kBoGVE0BA/tR46SbBQED4U+Olm5RAQGDl0CLb+T5A001iEFhZPUB9PzVeusk/QEJg5dAiu0FAWDm0yHaeP0C+nxov3eQ+QLByaJHtjEBAgZVDi2znP0ASg8DKoaU+QIXrUbgeJUBAXI/C9ShcPkBQjZduEoM8QNEi2/l+ijpABoGVQ4vsO0Bcj8L1KHw7QGq8dJMYJDpAc2iR7Xx/O0CHFtnO93M6QGDl0CLb2TlA2c73U+OlOUA=","dtype":"float64","order":"little","shape":[40]},"Others renewables":{"__ndarray__":"0SLb+X5q1D/n+6nx0k3aPxSuR+F6FN4/7FG4HoXr5T8QWDm0yHbqP1g5tMh2vuc/H4XrUbge6T9xPQrXo3DpP4lBYOXQIus/mG4Sg8DK7T+WQ4ts5/vpPz0K16NwPeo//tR46SYx7D9iEFg5tMjuP7ByaJHtfO8/exSuR+F68D9mZmZmZmbuP7Kd76fGS/M/rBxaZDvf8T9CYOXQItvxP1yPwvUoXP0/dZMYBFYO+T/y0k1iEFj9PzEIrBxaZABAnu+nxks3CECcxCCwcmgIQGIQWDm0yAxABFYOLbKdEEAOLbKd76cRQFg5tMh2PhVAMzMzMzMzFUCuR+F6FC4UQGq8dJMYBBRAgZVDi2znE0DFILByaJESQIXrUbgeBRJABoGVQ4tsE0B56SYxCKwTQK5H4XoUrhNArBxaZDvfFEA=","dtype":"float64","order":"little","shape":[40]},"Solar":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Knx0k1iUD/8qfHSTWJQP/yp8dJNYlA//Knx0k1iUD/8qfHSTWJQP/yp8dJNYlA//Knx0k1iUD/8qfHSTWJgP/p+arx0k2g//Knx0k1icD/6fmq8dJN4P/yp8dJNYoA/uB6F61G4jj97FK5H4XqUP8uhRbbz/aQ/uB6F61G4rj+q8dJNYhC4P8/3U+Olm8Q/bef7qfHSzT8=","dtype":"float64","order":"little","shape":[40]},"Wind":{"__ndarray__":"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/Knx0k1iUD/8qfHSTWJgP/yp8dJNYmA//Knx0k1iYD/8qfHSTWJgP/yp8dJNYmA//Knx0k1iYD/6fmq8dJNoP/p+arx0k3g/eekmMQisjD9aZDvfT42XP0w3iUFg5aA/WmQ730+Npz+kcD0K16OwP7pJDAIrh7Y/WDm0yHa+vz+LbOf7qfHCPz0K16NwPco/mpmZmZmZyT9KDAIrhxbRPy2yne+nxtM/DAIrhxbZ1j/4U+Olm8TYPzMzMzMzM9s/hxbZzvdT4z/dJAaBlUPrPzvfT42XbvI/JzEIrBxa+D/dJAaBlUMFQLpJDAIrhwdAz/dT46UbEUAbL90kBoETQAisHFpkOxtAkxgEVg4tGkDJdr6fGq8cQPYoXI/CdRtAVOOlm8SgH0A=","dtype":"float64","order":"little","shape":[40]},"Year":[1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],"index":[3534,3535,3536,3537,3538,3539,3540,3541,3542,3543,3544,3545,3546,3547,3548,3549,3550,3551,3552,3553,3554,3555,3556,3557,3558,3559,3560,3561,3562,3563,3564,3565,3566,3567,3568,3569,3570,3571,3572,3573]},"selected":{"id":"5541"},"selection_policy":{"id":"5540"}},"id":"5537","type":"ColumnDataSource"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#718dbf"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Coal"},"x":{"field":"Year"}},"id":"5597","type":"VBar"},{"attributes":{},"id":"5555","type":"BasicTicker"},{"attributes":{"fill_color":{"value":"#e84d60"},"line_color":{"value":"#1f77b4"},"top":{"field":"Solar"},"x":{"field":"Year"}},"id":"5612","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#4de8d5"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Hydro"},"x":{"field":"Year"}},"id":"5647","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5697"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5699"},"nonselection_glyph":{"id":"5698"},"view":{"id":"5701"}},"id":"5700","type":"GlyphRenderer"},{"attributes":{"source":{"id":"5537"}},"id":"5650","type":"CDSView"},{"attributes":{},"id":"5546","type":"DataRange1d"},{"attributes":{"fill_color":{"value":"#b3de69"},"line_color":{"value":"#1f77b4"},"top":{"field":"Nuclear"},"x":{"field":"Year"}},"id":"5629","type":"VBar"},{"attributes":{},"id":"5550","type":"LinearScale"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#4de8d5"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Hydro"},"x":{"field":"Year"}},"id":"5648","type":"VBar"},{"attributes":{},"id":"5587","type":"BasicTickFormatter"},{"attributes":{"axis":{"id":"5554"},"coordinates":null,"group":null,"ticker":null},"id":"5557","type":"Grid"},{"attributes":{"fill_color":{"value":"#c9d9d3"},"line_color":{"value":"#1f77b4"},"top":{"field":"Oil"},"x":{"field":"Year"}},"id":"5577","type":"VBar"},{"attributes":{"source":{"id":"5537"}},"id":"5701","type":"CDSView"},{"attributes":{"label":{"value":"Hydro"},"renderers":[{"id":"5649"}]},"id":"5661","type":"LegendItem"},{"attributes":{"label":{"value":"Others"},"renderers":[{"id":"5700"}]},"id":"5712","type":"LegendItem"},{"attributes":{},"id":"5541","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#c9d9d3"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Oil"},"x":{"field":"Year"}},"id":"5579","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#e8884d"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Gas"},"x":{"field":"Year"}},"id":"5681","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#e8884d"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Gas"},"x":{"field":"Year"}},"id":"5682","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"green"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Others"},"x":{"field":"Year"}},"id":"5699","type":"VBar"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5629"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5631"},"nonselection_glyph":{"id":"5630"},"view":{"id":"5633"}},"id":"5632","type":"GlyphRenderer"},{"attributes":{},"id":"5585","type":"AllLabels"},{"attributes":{"source":{"id":"5537"}},"id":"5616","type":"CDSView"},{"attributes":{"label":{"value":"Gas"},"renderers":[{"id":"5683"}]},"id":"5695","type":"LegendItem"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5680"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5682"},"nonselection_glyph":{"id":"5681"},"view":{"id":"5684"}},"id":"5683","type":"GlyphRenderer"},{"attributes":{"axis_label":"Total","coordinates":null,"formatter":{"id":"5584"},"group":null,"major_label_policy":{"id":"5585"},"ticker":{"id":"5559"}},"id":"5558","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#b3de69"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Nuclear"},"x":{"field":"Year"}},"id":"5630","type":"VBar"},{"attributes":{"source":{"id":"5537"}},"id":"5633","type":"CDSView"},{"attributes":{"label":{"value":"Nuclear"},"renderers":[{"id":"5632"}]},"id":"5644","type":"LegendItem"},{"attributes":{"coordinates":null,"data_source":{"id":"5537"},"glyph":{"id":"5577"},"group":null,"hover_glyph":null,"muted_glyph":{"id":"5579"},"nonselection_glyph":{"id":"5578"},"view":{"id":"5581"}},"id":"5580","type":"GlyphRenderer"},{"attributes":{"axis_label":"Year","coordinates":null,"formatter":{"id":"5587"},"group":null,"major_label_policy":{"id":"5588"},"ticker":{"id":"5555"}},"id":"5554","type":"LinearAxis"},{"attributes":{"fill_alpha":{"value":0.2},"fill_color":{"value":"#b3de69"},"hatch_alpha":{"value":0.2},"line_alpha":{"value":0.2},"line_color":{"value":"#1f77b4"},"top":{"field":"Nuclear"},"x":{"field":"Year"}},"id":"5631","type":"VBar"},{"attributes":{"source":{"id":"5537"}},"id":"5684","type":"CDSView"},{"attributes":{"fill_color":{"value":"green"},"line_color":{"value":"#1f77b4"},"top":{"field":"Others"},"x":{"field":"Year"}},"id":"5697","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#c9d9d3"},"hatch_alpha":{"value":0.1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"top":{"field":"Oil"},"x":{"field":"Year"}},"id":"5578","type":"VBar"},{"attributes":{},"id":"5548","type":"DataRange1d"},{"attributes":{},"id":"5559","type":"BasicTicker"},{"attributes":{"fill_color":{"value":"#4de8d5"},"line_color":{"value":"#1f77b4"},"top":{"field":"Hydro"},"x":{"field":"Year"}},"id":"5646","type":"VBar"}],"root_ids":["5543"]},"title":"Bokeh Application","version":"2.4.2"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            const fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  const docs_json = document.getElementById('6154').textContent;
+                  const render_items = [{"docid":"8fa4e874-20bb-495e-8309-82216aca2ee1","root_ids":["5543"],"roots":{"5543":"838a582c-5888-43a4-a39d-6dafd699a380"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    let attempts = 0;
+                    const timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+On the contrary, Sweden managed to keep Coal usage at low, reduced by half the usage of oil, and increased by a lot nuclear energy, wind energy and always had a great percentage of hydro.</p>
+<p>So there appears to be a severe difference in percentage of energy types between the highest and lowest polluter.</p>
+<h1 id="data-analsysis-machine-learning-models">Data Analsysis: Machine Learning Models</h1>
+<p>To better investigate the relationship between energy type and emission, let&rsquo;s build a classification algorithm that predicts if a country can be considered green on an emission point of view based upon the amount of energy produced per energy type.</p>
+<p><img src="/website1.github.io/d7.png" alt="demo"></p>
+<p>We can see by the plot above how the model is very reliable: it misspredicts just one country out of 16. While based upon feature importance, it appears that the key features are those with the highest emissions. This might lead to thinking that it&rsquo;s irrelevant if a country utilizes or not green energy. But we have a different interpretation: since, for example, nuclear energy has a low degree of emission, it doesn&rsquo;t influence as much the total emissions of a country, therefore it&rsquo;s not relevant in determining if a country is green or not.</p>
+<p>To verify if this hypotesis is correct, let&rsquo;s try a different model: one that utilizes the percentage of energy type usage. If our theory is correct, nuclear energy should be an important feature for the model: because in this case having high percentage of nuclear energy would mean low percentage of high emissions energy, like oil, so an overall low emissions values.</p>
+<p><img src="/website1.github.io/d8.png" alt="demo"></p>
+<p>This model is even more performative. It never misspredicted any country. And as we suspected, now features as the percentage of Nuclear and Hydro are very important, which is interesting because it&rsquo;s two of the three parameters, with oil, that had the highest difference between Sweden and India.</p>
+<p>So we have strong indicators that the percentage of energy type is a strong indicator of how green is a country based upon emissions.</p>
+<p>So let&rsquo;s assume the whole world had the percentage of energy type as Sweden, and let&rsquo;s see how it would impact the global emissions.</p>
+<p>To determine this, we will build a model that will predict the emissions based upon the energy percentage first and the total amount of energy utilized, and see how it would perform in case we utilized the same amount of energy of the world with the proportions of sweden.</p>
+<p><img src="/website1.github.io/d9.png" alt="demo"></p>
+<p>With a 0.1 circa of normalized RMSE, a good measure of model performance, the model predicts a reduction of emissions of circa 86%.</p>
+<p>Now let&rsquo;s build a model that has in input the emissions and in output the temperature anomalies, to determine how this level of predicted emissions would affect global warming.</p>
+<p><img src="/website1.github.io/d10.png" alt="demo"></p>
+<p>With a 0.2 circa of normalized RMSE, an acceptable measure of model performance, the model predicts a drop of 97% of temperature anomalies, so an almost total reversal to pre-industrial temperatures.</p>
+<h1 id="mortality">Mortality</h1>
+<p>We have seen how a great deal of nuclear energy, as utilized by Sweden, can be crucial towards lowering emissions. But the objection might come immediate: &ldquo;isn&rsquo;t it dangerous?&rdquo;. So based upon death by energy type statistics, let&rsquo;s confront the mortality associated with deaths with the current world energy type proportions, with the deaths if the world had the same energy usage of sweden.</p>
+<p><img src="/website1.github.io/d11.png" alt="demo">
+As we can see the total amount of deaths would reduce by 70% circa. But more interestingly, even though sweden has a very high percentage of Nuclear Energy usage, it still appears to have a negligeble amount of mortality. But Coil on the contrary has a very low energy percentage but a high death toll: this is because the long term health effects of breathing coil byproducts and the dangers of its extraction. So the true dangers aren&rsquo;t in the nuclear, but in high emission energy types.</p>
+<h1 id="conclusion">Conclusion:</h1>
+<p>We have witnessed how there is a clear connection between the rising of the temperatures, emissions, energy requirements per capita, and energy type usage.</p>
+<p>But it appears a simple solution could help solve all of these problems: adopting the scandinavian energy proportion usage.</p>
 
 </article>
 
