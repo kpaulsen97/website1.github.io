@@ -32,11 +32,11 @@ By current statistics we are severly far away from the plans to reduce world emi
 <p><img src="/website1.github.io/d1.png" alt="demo">
 <img src="/website1.github.io/d2.png" alt="demo"></p>
 <p>We can see in the above images how the change of temperature is a very real phenomena: in the first two plot we can see how there has been an significant average difference of temperature from a pre-industrial baseline year by year.</p>
-<p>In the plots that follows we can see how in every continent the increase appears to be linear: every year there appears to be an costant increment, with Asia displaying the highest increase, and Oceania the lowest. So we have to admit that year by year we are inesorably increasing the earth temperature, with all it&rsquo;s negative consequences.</p>
+<p>In the plots that follows we can see how in every continent the increase appears to be linear: every year there appears to be a costant increment, with Asia displaying the highest increase, and Oceania the lowest. So we have to admit that year by year we are inesorably increasing the earth temperature, with all it&rsquo;s negative consequences.</p>
 <h1 id="exploratory-data-analysis-emissions">Exploratory Data Analysis: Emissions</h1>
 <p><img src="/website1.github.io/d4.png" alt="demo">
 With the above pictures we have a hint of a pattern that starts to emerge: from the plots before we can tell how the temperatures have been rising, and from these two above we can see how both the energy expenditure per capita and the emissions have been increasing.</p>
-<p>So there seem to be three key playiers: the energy expenditure, the temperatures and the emissions.</p>
+<p>So there seem to be three key players: the energy expenditure, the temperatures and the emissions.</p>
 <p><img src="/website1.github.io/d5.png" alt="demo"></p>
 <p>Above there is a plot of the emissions by country in year 2019: we can see how there is a profound difference between countries, with USA and China leading by far in terms of emissions. So let&rsquo;s have a closer look in the differnece between emission reduction in recent years.</p>
 <p><img src="/website1.github.io/d6.png" alt="demo">
@@ -130,7 +130,7 @@ Emissions are reducing in first world countries, especially in scandinavian coun
   </body>
   
 </html>
-India, which had the biggest increase in emissions in the last 30 years, appears to be using a high percentage of oil, coal and gas, the energy types with the highest emissions. Negligeble amount of sustainable energy types, with an actual decrease of hydro energy during the years.</p>
+India, which had the biggest increase in emissions in the last 30 years, appears to be using a high percentage of oil, coal and gas, the energy types with the highest emissions. Negligible amount of sustainable energy types, with an actual decrease of hydro energy during the years.</p>
 <p>So one of the countries with the highest emissions appears to be using a very low percentage of &ldquo;green&rdquo; energy types. What about the country with the lowest emissions per population size, Sweden?</p>
 <p>
 
@@ -226,19 +226,19 @@ On the contrary, Sweden managed to keep Coal usage at low, reduced by half the u
 <p>We can see by the plot above how the model is very reliable: it misspredicts just one country out of 16. While based upon feature importance, it appears that the key features are those with the highest emissions. This might lead to thinking that it&rsquo;s irrelevant if a country utilizes or not green energy. But we have a different interpretation: since, for example, nuclear energy has a low degree of emission, it doesn&rsquo;t influence as much the total emissions of a country, therefore it&rsquo;s not relevant in determining if a country is green or not.</p>
 <p>To verify if this hypotesis is correct, let&rsquo;s try a different model: one that utilizes the percentage of energy type usage. If our theory is correct, nuclear energy should be an important feature for the model: because in this case having high percentage of nuclear energy would mean low percentage of high emissions energy, like oil, so an overall low emissions values.</p>
 <p><img src="/website1.github.io/d8.png" alt="demo"></p>
-<p>This model is even more performative. It never misspredicted any country. And as we suspected, now features as the percentage of Nuclear and Hydro are very important, which is interesting because it&rsquo;s two of the three parameters, with oil, that had the highest difference between Sweden and India.</p>
-<p>So we have strong indicators that the percentage of energy type is a strong indicator of how green is a country based upon emissions.</p>
+<p>This model is even more performative. It never misspredicted any country. And as we suspected, now features as the percentage of Nuclear and Hydro are very important, which is interesting because they are two of the three parameters, with oil, that had the highest difference between Sweden and India.</p>
+<p>So we have strong suggestions that the percentage of energy type is an indicator of how green is a country based upon emissions.</p>
 <p>So let&rsquo;s assume the whole world had the percentage of energy type as Sweden, and let&rsquo;s see how it would impact the global emissions.</p>
-<p>To determine this, we will build a model that will predict the emissions based upon the energy percentage first and the total amount of energy utilized, and see how it would perform in case we utilized the same amount of energy of the world with the proportions of sweden.</p>
+<p>To determine this, we will build a model that will predict the emissions based upon the energy percentage and the total amount of energy utilized, and see how it would perform in case we utilized the same amount of energy of the world with the proportions of sweden.</p>
 <p><img src="/website1.github.io/d9.png" alt="demo"></p>
 <p>With a 0.1 circa of normalized RMSE, a good measure of model performance, the model predicts a reduction of emissions of circa 86%.</p>
 <p>Now let&rsquo;s build a model that has in input the emissions and in output the temperature anomalies, to determine how this level of predicted emissions would affect global warming.</p>
 <p><img src="/website1.github.io/d10.png" alt="demo"></p>
 <p>With a 0.2 circa of normalized RMSE, an acceptable measure of model performance, the model predicts a drop of 97% of temperature anomalies, so an almost total reversal to pre-industrial temperatures.</p>
 <h1 id="mortality">Mortality</h1>
-<p>We have seen how a great deal of nuclear energy, as utilized by Sweden, can be crucial towards lowering emissions. But the objection might come immediate: &ldquo;isn&rsquo;t it dangerous?&rdquo;. So based upon death by energy type statistics, let&rsquo;s confront the mortality associated with deaths with the current world energy type proportions, with the deaths if the world had the same energy usage of sweden.</p>
+<p>We have seen how a great deal of nuclear energy, as utilized by Sweden, can be crucial towards lowering emissions. But the objection might come immediate: &ldquo;isn&rsquo;t it dangerous?&rdquo;. So based upon death by energy type statistics, let&rsquo;s confront the mortality associated with the current world energy type proportions, with the mortality of the world if it had the same energy proportions of Sweden.</p>
 <p><img src="/website1.github.io/d11.png" alt="demo">
-As we can see the total amount of deaths would reduce by 70% circa. But more interestingly, even though sweden has a very high percentage of Nuclear Energy usage, it still appears to have a negligeble amount of mortality. But Coil on the contrary has a very low energy percentage but a high death toll: this is because the long term health effects of breathing coil byproducts and the dangers of its extraction. So the true dangers aren&rsquo;t in the nuclear, but in high emission energy types.</p>
+As we can see the total amount of deaths would be reduced by 70% circa. But more interestingly, even though Sweden has a very high percentage of Nuclear Energy usage, it still appears to have a negligible amount of mortality. But Coil on the contrary has a very low energy percentage but a high death toll: this is because the long term health effects of breathing coal byproducts and the dangers of its extraction. So the true dangers aren&rsquo;t in the nuclear, but in high emission energy types.</p>
 <h1 id="conclusion">Conclusion:</h1>
 <p>We have witnessed how there is a clear connection between the rising of the temperatures, emissions, energy requirements per capita, and energy type usage.</p>
 <p>But it appears a simple solution could help solve all of these problems: adopting the scandinavian energy proportion usage.</p>
